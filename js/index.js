@@ -52,8 +52,8 @@ $(function() {
             work2 = $('#works .gallery li').eq(3).offset().top - $(window).height(),
             work3 = $('#works .gallery li').eq(6).offset().top - $(window).height(),
             info_title1 = $('.info_title1').offset().top,
-            info_title2 = $('.info_title2').offset().top - $(window).height(),
-            fin = $('.fin_txt').offset().top;
+            fin = $('#fin').offset().top - $(window).height(),
+            fin_txt = $('.fin_txt').offset().top;
 
         // 스크롤 시 #title 애니메이션
         if(w_scroll > 100) {
@@ -74,10 +74,8 @@ $(function() {
         // .info_txt .txt1 부분까지 스크롤 했을 때 #learn_more 아이콘 나타남 + video 투명도 0
         if(info_txt < w_scroll) {
             $('#learn_more').animate({left: 30}, 500);
-            $('video').css('opacity', 0);
         } else {
             $('#learn_more').stop(1,1).animate({left: -120}, 500);
-            $('video').css('opacity', 1);
         }
   
         // .gallery까지 스크롤 했을 때 사진 애니메이션
@@ -95,10 +93,12 @@ $(function() {
             $('#works ul li').eq(3).addClass('showing');
             $('#works ul li').eq(4).addClass('showing');
             $('#works ul li').eq(5).addClass('showing');
+            $('video').css('opacity', 0);
           } else {
             $('#works ul li').eq(3).removeClass('showing');
             $('#works ul li').eq(4).removeClass('showing');
             $('#works ul li').eq(5).removeClass('showing');
+            $('video').css('opacity', 1);
           }
 
           if(w_scroll > work3) {
@@ -111,8 +111,8 @@ $(function() {
             $('#works ul li').eq(8).removeClass('showing');
           }
   
-        // .info_title2에서 200px 더 스크롤 했을 때 .box 나타나는 애니메이션, #video 투명도 조절
-        if(w_scroll >= info_title2 + 200) {
+        // #fin 영역까지 가면 .box 나타나는 애니메이션, #video 투명도 조절
+        if(w_scroll >= fin - 300) {
           $('.info_title2 .box').addClass('ta_da');
           $('#video').css('opacity', 0);
         } else {
@@ -121,7 +121,7 @@ $(function() {
         }
 
         // .fin_txt 영역까지 가면 #learn_more 아이콘 사라짐
-        if(w_scroll > fin) {
+        if(w_scroll > fin_txt) {
             $('#learn_more').addClass('hidden');
         } else {
             $('#learn_more').removeClass('hidden');
@@ -133,5 +133,26 @@ $(function() {
         $(this).addClass('hover');
     }, function() {
         $(this).removeClass('hover');
+    });
+
+    // horizontal scroll
+    const spaceHolder = document.querySelector('.space_holder');
+    const horizontal = document.querySelector('.horizontal');
+    spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+    
+    function calcDynamicHeight(ref) {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const objectWidth = ref.scrollWidth;
+      return objectWidth - vw + vh + 20;
+    }
+    
+    window.addEventListener('scroll', () => {
+      const sticky = document.querySelector('.sticky');
+      horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+    });
+    
+    window.addEventListener('resize', () => {
+      spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
     });
 });
