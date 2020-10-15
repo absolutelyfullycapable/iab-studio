@@ -9,7 +9,7 @@
 - **웹사이트 첫 페이지**
 
 ### production period
-- 2020.10.10 -
+- 2020.10.10 - 2020.10.15
 
 ### degree of participation
 - 100% (Redesign, Publishing, Video edit, etc)
