@@ -29,10 +29,10 @@ $(function() {
     $('body').on("mousewheel", function(event, delta){
         if(delta > 0) {
           //마우스 휠 up
-        $('header').removeClass('fade');
+        $('header').removeClass('opacity');
         } else if(delta < 0){
             //마우스 휠 down
-            $('header').addClass('fade');
+            $('header').addClass('opacity');
         }
     });
 

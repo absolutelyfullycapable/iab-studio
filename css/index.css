@@ -33,21 +33,21 @@ a { display:block; text-decoration:none; }
             .container .main #video .video_box { height:100vh; }
             .container .main #video .video_box video { position:fixed; z-index:-1; }
 
-            .container .main #video .txt { width:100%; height:100vh; font-size:3em; color:#fff; line-height:1.4; padding:130px; box-sizing:border-box; }
+            .container .main #video .txt { width:100%; height:100vh; font-size:2.5vw; color:#fff; line-height:1.4; padding:130px; box-sizing:border-box; }
                 .container .main #video .txt span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
         /*** works ***/
         .container .main #works { width:100%; padding:160px 50px 50px; box-sizing:border-box; background-color:#fff; }
-            .container .main #works h2 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:2.7em; margin:0 0 160px 90px; }
+            .container .main #works h2 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:2.250vw; margin:0 0 160px 90px; }
             
             .container .main #works ul { display:flex; flex-wrap:wrap; width:100%; }
-                .container .main #works ul li { width:428px; margin-bottom:180px; cursor:pointer; position:relative; }
-                .container .main #works ul li:nth-child(3n+2) { margin:100px 14.3% 180px; }
+                .container .main #works ul li { width:33.333333%; margin-bottom:180px; cursor:pointer; position:relative; display:flex; flex-direction:column; }
+                .container .main #works ul li:nth-child(3n+2) { margin:100px 0 180px; }
                 .container .main #works ul li:nth-child(3n+3) { margin-top:200px; }
 
-                    .container .main #works ul li .img { width:428px; height:648px; display:block; transition:0.3s; }
+                    .container .main #works ul li .img { width:428px; height:648px; display:block; transition:0.3s; align-self:center; }
 
-                        .container .main #works ul li .img:after { content:''; display:block; clear:both; position:absolute; top:0; right:0; width:428px; height:648px; background-color:#ffcc47; transition:1.5s ease; }
+                        .container .main #works ul li .img:after { content:''; display:block; clear:both; position:absolute; top:0; left:50%; transform:translateX(-50%); width:428px; height:648px; background-color:#ffcc47; transition:1.5s ease; }
                         .container .main #works ul li:nth-of-type(4) .img:after, .container .main #works ul li:nth-of-type(5) .img:after, .container .main #works ul li:nth-of-type(6) .img:after { background-color:#ff4351; }
                         .img:after, .container .main #works ul li:nth-of-type(7) .img:after, .container .main #works ul li:nth-of-type(8) .img:after, .container .main #works ul li:last-of-type .img:after { background-color:#2ea7d7; }
 
@@ -81,14 +81,14 @@ a { display:block; text-decoration:none; }
                             .container .main #works ul li:last-child.hover .img { background:url(../images/kakao_hover.jpg) no-repeat 0% 50%; background-size:cover; }
 
 
-                    .container .main #works ul li p, .container .main #works ul li .txt_box .txt { margin:0 0 0 20px; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.6em; }
-                        .container .main #works ul li p { transform:skewY(-5deg); margin-top:35px; transition:0.3s; }
+                    .container .main #works ul li p, .container .main #works ul li .txt_box .txt { margin:0; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.6em; }
+                        .container .main #works ul li p { transform:skewY(-5deg); margin:35px 0 0 15%; transition:0.3s; }
                         .container .main #works ul li.hover p { opacity:0; }
 
-                        .container .main #works ul li .txt_box { position:absolute; top:500px; transform:skewY(-5deg); }
-                            .container .main #works ul li .txt_box .txt { width:300px; height:90px; display:flex; align-items:center; padding:0 15px; box-sizing:border-box; color:#fff; opacity:0; transition:0.3s; }
+                        .container .main #works ul li .txt_box { position:absolute; top:500px; align-self:center; transform:skewY(-5deg); }
+                            .container .main #works ul li .txt_box .txt { width:14vw; height:90px; display:flex; align-items:center; padding:0 15px; box-sizing:border-box; color:#fff; opacity:0; transition:0.3s; }
                             .container .main #works ul li.hover .txt_box .txt { opacity:1; }
-                                .container .main #works ul li .txt_box .txt1 { margin:0 0 -1px 110px; }
+                                .container .main #works ul li .txt_box .txt1 { margin:0 0 -1px 70px; }
                         
                             .container .main #works ul li:first-child .txt, .container .main #works ul li:nth-child(2) .txt, .container .main #works ul li:nth-child(3) .txt { background-color:#ffcc47; }
 
@@ -106,7 +106,7 @@ a { display:block; text-decoration:none; }
         }
 
             /** info title 1 **/
-            .container .main #info .info_title1 { width:100%; height:100vh; padding:0 130px; box-sizing:border-box; font-size:14em; display:flex; flex-direction:column; justify-content:center; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
+            .container .main #info .info_title1 { width:100%; height:100vh; padding:0 130px; box-sizing:border-box; font-size:11.667vw; display:flex; flex-direction:column; justify-content:center; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:900; }
                 .container .main #info .info_title1 span { display:block; }
 
 
@@ -121,12 +121,12 @@ a { display:block; text-decoration:none; }
             /** info txt **/
             .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt { font-weight:700; position: relative; height:100vh; width:100vw; margin-right: 75px; flex-shrink: 0; }
                 .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt1 { position:absolute; top:50%; right:50%; transform:translateY(-50%); z-index:2; }
-                    .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt1 > p { font-size:4em; letter-spacing:-3px; margin:0 70px 0 0; }
+                    .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt1 > p { font-size:3.333vw; letter-spacing:-3px; margin:0 70px 0 0; }
                     
                     .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt1 .more { margin-top:20px; display:flex; align-items:center; font-size:1.1em; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; cursor:pointer; }
                             .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt1 .more .circle { width:15px; height:15px; border-radius:50%; background-color:#ffe71b; margin:0 25px 0 10px; cursor:pointer; }
 
-                .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt2 { font-size:1.5em; position:absolute; top:60%; right:25%; z-index:2; }
+                .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt2 { font-size:1.25vw; position:absolute; top:60%; right:25%; z-index:2; }
                     .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_txt .txt2 span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
             /** info article **/
@@ -137,7 +137,7 @@ a { display:block; text-decoration:none; }
 
                 .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_article .article_txt1 { display:flex; justify-content:flex-start; }
                     .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_article .article_txt1 p { margin:0; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
-                        .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_article .article_txt1 p:first-of-type { font-size:2.8em; font-weight:800; }
+                        .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_article .article_txt1 p:first-of-type { font-size:2.333vw; font-weight:800; }
                         .container .main #info .info_container .space_holder .sticky .horizontal .cards .info_article .article_txt1 p:last-of-type { margin-left:10px; font-size:1.3em; }
 
                 
@@ -169,10 +169,10 @@ a { display:block; text-decoration:none; }
         
         /*** fin ***/
         .container .main #fin { width:100%; padding-top:140px; box-sizing:border-box; background-color:#fff; position:relative; z-index:3; overflow:hidden; }
-            .container .main #fin h2 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:2.7em; margin:0 0 160px 140px; }
+            .container .main #fin h2 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:2.25vw; margin:0 0 160px 140px; }
 
             .container .main #fin .fin_txt { position:absolute; top:350px; right:350px; z-index:9; }
-                .container .main #fin .fin_txt p { margin:0 0 30px 0; font-weight:500; font-size:1.6em; line-height:1.4; }
+                .container .main #fin .fin_txt p { margin:0 0 30px 0; font-weight:500; font-size:1.333vw; line-height:1.4; }
                     .container .main #fin .fin_txt span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
                 .container .main #fin .fin_txt .tap { width:120px; height:120px; }
@@ -198,13 +198,13 @@ a { display:block; text-decoration:none; }
 
             .container .main #news .news-container { width:100%; overflow:hidden; }
 
-            .container .main #news ul { width:100%; margin-top:40px; }
+            .container .main #news ul { width:100%; margin-top:40px; position:relative; z-index:2; }
                 .container .main #news ul li { width:50%; height:120px; display:flex; align-items:flex-start; color:rgb(160, 160, 160); cursor:pointer; transition:0.2s; }
-                .container .main #news ul li.focus, .container .main #news ul li:hover { color:#000; }
+                .container .main #news ul li.focus, .container .main #news ul li:hover, .container .main #news ul li.focus, .container .main #news ul li:active { color:#000; }
                     .container .main #news ul li p { margin:0 50px 0 0; font-size:1.1em; }
 
                     .container .main #news ul li .title { height:120px; display:flex; flex-direction:column; justify-content:space-between; }
-                        .container .main #news ul li .title h3 { margin:0;  font-weight:500; font-size:1.4em; }
+                        .container .main #news ul li .title h3 { margin:0;  font-weight:500; font-size:1.167vw; }
                         .container .main #news ul li .title .more { cursor:pointer; display:flex; align-items:center; }
 
                             .container .main #news ul li .title h3 span, .container .main #news ul li .title .more p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; }
@@ -220,9 +220,29 @@ a { display:block; text-decoration:none; }
 
                 .container .main #news .swiper-button-next:hover, .container .main #news .swiper-button-prev:hover { background-color:#ffe71b; }
 
+            .container .main #news .bg_circle { position:absolute; z-index:1; }
+                .container .main #news #bg_circle1 { width:400px; height:400px; background:url(../images/bg_circle1.png) no-repeat 50% 50%; background-size:350px; top:20%; left:40%; opacity:0.3; animation:move1 3s infinite linear; }
+                @keyframes move1 {
+                    0% { transform:rotate(0deg) translate(-3vw) rotate(0deg);}
+                    50% { transform:rotate(-180deg) translate(-3vw) rotate(-180deg);}
+                    100% { transform:rotate(-360deg) translate(-3vw) rotate(-360deg); }
+                  }
+                .container .main #news #bg_circle2 { width:250px; height:250px; background:url(../images/bg_circle2.png) no-repeat 50% 50%; background-size:200px; top:55%; left:40%; opacity:0.5; animation:move2 3s infinite linear; }
+                @keyframes move2 {
+                    0% { transform:rotate(0deg) translate(2vw) rotate(0deg); }
+                    50% { transform:rotate(180deg) translate(2vw) rotate(-180deg);}
+                    100% { transform:rotate(360deg) translate(2vw) rotate(-360deg);}
+                }
+                .container .main #news #bg_circle3 { width:300px; height:300px; background:url(../images/bg_circle3.png) no-repeat 50% 50%; background-size:250px; top:50%; left:45%; animation:move3 5s infinite linear; }
+                @keyframes move3 {
+                    0% { transform: rotate(0deg) translate(1vw) rotate(0deg); }
+                    50% { transform: rotate(180deg) translate(1vw) rotate(-180deg); }
+                    100% { transform: rotate(360deg) translate(1vw) rotate(-360deg); }
+                }
+
     
     /***** footer *****/
-    .container footer { width:100%; display:flex; align-items:flex-start; padding:200px 100px 90px; box-sizing:border-box; font-weight:300; color:#222; font-size:1.1em; background-color:#fff; position:relative; z-index:3; }
+    .container footer { width:100%; display:flex; align-items:flex-start; padding:200px 100px 90px; box-sizing:border-box; font-weight:300; color:#222; font-size:0.917vw; background-color:#fff; position:relative; z-index:3; }
         .container footer img { display:block; width:100px; height:61px; }
 
         .container footer > p { margin:0 170px 0 auto; line-height:1.6; }
