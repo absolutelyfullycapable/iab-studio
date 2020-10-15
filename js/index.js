@@ -27,12 +27,10 @@ $(function() {
 
     // 마우스휠 플러그인
     $('body').on("mousewheel", function(event, delta){
-        if(delta > 0) {
-          //마우스 휠 up
-        $('header').removeClass('opacity');
+        if(delta >= 0) {
+          $('header').removeClass('fade');
         } else if(delta < 0){
-            //마우스 휠 down
-            $('header').addClass('opacity');
+          $('header').addClass('fade');
         }
     });
 
@@ -41,6 +39,7 @@ $(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 1100);
+        $('header').removeClass('fade');
       });
 
     // 스크롤 시 나타나는 애니메이션
