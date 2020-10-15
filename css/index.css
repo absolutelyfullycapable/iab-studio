@@ -175,8 +175,7 @@ a { display:block; text-decoration:none; }
                 .container .main #fin .fin_txt p { margin:0 0 30px 0; font-weight:500; font-size:1.333vw; line-height:1.4; }
                     .container .main #fin .fin_txt span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
-                .container .main #fin .fin_txt .tap { width:120px; height:120px; }
-                    .container .main #fin .fin_txt .tap a { display:block; background-color:#ffe71b; width:100%; height:100%; border-radius:50%; line-height:120px; text-align:center; font-weight:500; font-size:1.1em; color:#000; }
+                .container .main #fin .fin_txt .tap { width:120px; height:120px; background-color:#ffe71b; border-radius:50%; line-height:120px; text-align:center; font-weight:500; font-size:1.1em; color:#000; cursor:pointer; }
 
                 .container .main #fin .txt { color:#eee; font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:11vw; font-weight:900; margin:0; position:absolute; transform:rotate(-12deg); }
                     .container .main #fin .back_txt { z-index:1; }
