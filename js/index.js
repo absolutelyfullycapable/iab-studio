@@ -1,7 +1,7 @@
 $(function() {
     // 적응형
     var wd = $(window).width();
-    if(wd > 0 && wd < 1440) {
+    if(wd > 0 && wd < 1280) {
         let userAgent = navigator.userAgent;
 
         let smartPhone = ['iphone', 'ipad', 'android'];
