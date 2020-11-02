@@ -5,8 +5,8 @@
 - 해당 웹사이트는 적응형 웹사이트로 제작되었습니다.
 - 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.
 
-### available pages
-- **웹사이트 첫 페이지**
+### available page
+- [웹사이트 첫 페이지](https://absolutelyfullycapable.github.io/iab-studio)
 
 ### production period
 - 2020.10.10 - 2020.10.15
