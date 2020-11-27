@@ -358,7 +358,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     transform: scale(0);
     transform-origin: left top;
-    height:4px;
+    height:5px;
 }
 
 .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
