@@ -56,10 +56,10 @@ $(function() {
 
         // 스크롤 시 #title 애니메이션
         if(w_scroll > 100) {
-            $('.main').addClass('hide');
+            $('#main').addClass('hide');
             $('#video').addClass('hide');
         } else {
-            $('.main').removeClass('hide');
+            $('#main').removeClass('hide');
             $('#video').removeClass('hide');
         }
   
