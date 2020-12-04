@@ -27,6 +27,9 @@ a { display:block; text-decoration:none; }
 
         .container header ul { width:730px; position:absolute; top:50%; left:50%; transform:translateX(-45%); display:flex; justify-content:space-between; align-items:center; }
             .container header ul li { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.2em; cursor:pointer; }
+                .container header ul li a { color:#000; }
+                .container header ul li a::after { content:''; display:block; border-bottom:1px solid #000; transform:translateY(10px); opacity:0; transition:0.6s; }
+                .container header ul li a:hover::after { opacity:1; transform:translateY(0px); }
 
     /***** main *****/
     .container #main { width:100%; margin-top:330px; transition:0.5s; }
@@ -269,9 +272,9 @@ a { display:block; text-decoration:none; }
     /***** license *****/
     .container #license { width:100%; font-size:0.9em; color:#ddd; text-align:center; padding:0 0 40px 0; background-color:#fff; position:relative; z-index:3; }
 
-    /*** go to top ***/
+    /***** go to top *****/
     .container #go_to_top { position:fixed; bottom:20px; right:20px; width:35px; height:35px; background:url(../images/to_top.svg) no-repeat 50% 50%; background-size:28px; z-index:9; cursor:pointer; opacity:0; }
 
-    /*** learn more ***/
+    /***** learn more *****/
     .container #learn_more { width:120px; height:120px; line-height:120px; background-color:#ffe71b; border-radius:50%; text-align:center; font-weight:500; font-size:1.1em; position:fixed; bottom:30px; left:-150px; z-index:2; cursor:pointer; }
     .container #learn_more.hidden { display:none; }
