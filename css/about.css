@@ -65,7 +65,7 @@ a { display:block; text-decoration:none; }
                 .container #main #value .video_box video { width:100%; vertical-align:top; }
 
         /** history **/
-        .container #main #history { width:100%; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); background-size:500% 500%; animation:gradient 7s ease infinite; box-sizing:border-box; }
+        .container #main #history { width:100%; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); background-size:500% 500%; animation:gradient 7s ease infinite; box-sizing:border-box; position:relative; min-height:100vh; }
         @keyframes gradient {
             0% { background-position: 50% 50%; }
             50% { background-position: 100% 100%; }
@@ -73,8 +73,13 @@ a { display:block; text-decoration:none; }
         }
             .container #main #history article { height:100vh; }
 
+            .container #main #history .space_holder { position:relative; width:100%; }
+                .container #main #history .space_holder .sticky { position:sticky; top:0; height:100vh; width:100%; overflow-x:hidden; }
+                    .container #main #history .space_holder .sticky .horizontal { position:absolute; height:100%; will-change:transform; }
+                        .container #main #history .space_holder .sticky .horizontal .cards { position:relative; height:100%; display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; }
+
             /* history title */
-            .container #main #history .history_title { width:90vw; padding:140px 10%; box-sizing:border-box; background:#fff url(../images/about_next.png) no-repeat 95% 47%; background-size:80px; display:flex; flex-direction:column; justify-content:space-between; transition:0.2s; }
+            .container #main #history .history_title { width:90vw; /* padding:140px 10%; */ box-sizing:border-box; background:#fff url(../images/about_next.png) no-repeat 95% 47%; background-size:80px; display:flex; flex-direction:column; justify-content:space-between; transition:0.2s; }
             .container #main #history .history_title.active { background:#eee url(../images/about_next.png) no-repeat 95% 47%; background-size:80px; }
                 .container #main #history .history_title .txt h2 { font-size:6.25vw; margin:0; transition:0.2s; }
                 .container #main #history .history_title.active .txt h2 { color:#fff; text-shadow:0 0 10px rgba(0, 0, 0, 0.1); }
