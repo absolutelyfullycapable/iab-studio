@@ -7,6 +7,7 @@
 
 ### available page
 - [웹사이트 첫 페이지](https://absolutelyfullycapable.github.io/iab-studio)
+- [IAB studio 소개 페이지](https://absolutelyfullycapable.github.io/iab-studio/about.html)
 
 ### production period
 - 2020.10.10 - 2020.10.15
