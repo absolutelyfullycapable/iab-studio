@@ -51,9 +51,9 @@ a { display:block; text-decoration:none; }
                     .container #main #main_title .title .description p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:1.823vw; color:#222; margin:10px 0 0; }
 
             /* philosophy */
-            .container #main #main_title .philosophy { width:23vw; display:flex; flex-direction:column; margin:170px 10% 0 auto; color:#222; }
-                .container #main #main_title .philosophy h3 { margin:20px 0; font-weight:700; }
-                .container #main #main_title .philosophy p { line-height:1.4; font-size:1.51vw; font-weight:400; margin:0; }
+            .container #main #main_title .philosophy { width:21vw; display:flex; flex-direction:column; margin:180px 10% 0 auto; color:#222; }
+                .container #main #main_title .philosophy h3 { margin:40px 0; font-weight:700; }
+                .container #main #main_title .philosophy p { line-height:1.4; font-size:1.4vw; font-weight:400; margin:0; }
                     .container #main #main_title .philosophy p span { font-weight:500; }
 
         /** value **/
