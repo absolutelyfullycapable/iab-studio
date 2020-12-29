@@ -12,6 +12,11 @@ $(function() {
         }
     }
 
+    // 빈 링크 가진 a 기본 성격 제거
+    $('a[href="#"]').on('click', function(e) {
+        e.preventDefault();
+    });
+
     // 마우스휠 플러그인
     $('body').on("mousewheel", function(event, delta){
         if(delta >= 0) {
