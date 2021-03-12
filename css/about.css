@@ -15,114 +15,110 @@ a { display:block; text-decoration:none; }
 ::-webkit-scrollbar-track { background-color:#eee; }
 
 
-
 /****** container ******/
 .container { width:100%; }
 
     /***** header *****/
-    .container header { width:100%; height:130px; display:flex; align-items:center; padding:0 120px; box-sizing:border-box; position:fixed; top:0; left:0; transition:0.5s ease; z-index:99; }
-    .container header.fade { opacity:0; top:-70px; }
-        .container header h1 { width:120px; height:70px; margin-right:auto; }
-            .container header h1 a { width:100%; height:100%; text-indent:-9999px; background:url(../images/logo.png) no-repeat 50% 50%; background-size:cover; }
+    header { width:100%; height:130px; display:flex; align-items:center; padding:0 120px; box-sizing:border-box; position:fixed; top:0; left:0; transition:0.5s ease; z-index:99; }
+    header.fade { opacity:0; top:-70px; }
+        header h1 { width:120px; height:70px; margin-right:auto; }
+            header h1 a { width:100%; height:100%; text-indent:-9999px; background:url(../images/logo.png) no-repeat 50% 50%; background-size:cover; }
 
-        .container header ul { width:730px; position:absolute; top:50%; left:50%; transform:translateX(-45%); display:flex; justify-content:space-between; align-items:center; }
-            .container header ul li { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.2em; cursor:pointer; }
-                .container header ul li a { color:#000; }
-                .container header ul li a::after { content:''; display:block; border-bottom:1px solid #000; transform:translateY(10px); opacity:0; transition:0.6s; }
-                .container header ul li a:hover::after { opacity:1; transform:translateY(0px); }
-
+        header ul { width:730px; position:absolute; top:50%; left:50%; transform:translateX(-45%); display:flex; justify-content:space-between; align-items:center; }
+            header ul li { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:1.2em; cursor:pointer; }
+                header ul li a { color:#000; }
+                header ul li a::after { content:''; display:block; border-bottom:1px solid #000; transform:translateY(10px); opacity:0; transition:0.6s; }
+                header ul li a:hover::after { opacity:1; transform:translateY(0px); }
 
     /*** main ***/
-    .container #main { width:100%; }
-        .container #main h2, .container #main h3, .container #main span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
-        
+    #main { width:100%; }
+        #main h2, #main h3, #main span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+
         /** main title **/
-        .container #main #main_title  { width:100%; margin-bottom:140px; overflow:hidden; }
+        #main_title  { width:100%; margin-bottom:140px; overflow:hidden; }
             /* title */
-            .container #main #main_title .title { position:relative; transform:rotate(-15deg); }
-                .container #main #main_title .title h2 { margin:0; font-size:11.5vw; line-height:1; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-                    .container #main #main_title .title h2 span:first-of-type { margin-left:2.604vw; }
-                    .container #main #main_title .title h2 span:nth-of-type(2) { margin-left:18.229vw; }
-                    .container #main #main_title .title h2 span:nth-of-type(3) { margin-left:10.417vw; }
-                    .container #main #main_title .title h2 span:last-of-type { margin-left:28.646vw; }
-                
-                .container #main #main_title .description { position:absolute; top:56%; left:42%; }
-                    .container #main #main_title .title .description .dot { width:30px; height:30px; background-color:#ffe71b; border-radius:50%; }
-                    .container #main #main_title .title .description p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:1.823vw; color:#222; margin:10px 0 0; }
+            #main_title .title { position:relative; transform:rotate(-15deg); }
+                #main_title .title h2 { margin:0; font-size:11.5vw; line-height:1; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+                    #main_title .title h2 span:first-of-type { margin-left:2.604vw; }
+                    #main_title .title h2 span:nth-of-type(2) { margin-left:18.229vw; }
+                    #main_title .title h2 span:nth-of-type(3) { margin-left:10.417vw; }
+                    #main_title .title h2 span:last-of-type { margin-left:28.646vw; }
+
+                #main_title .description { position:absolute; top:56%; left:42%; }
+                    #main_title .title .description .dot { width:30px; height:30px; background-color:#ffe71b; border-radius:50%; }
+                    #main_title .title .description p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:1.823vw; color:#222; margin:10px 0 0; }
 
             /* philosophy */
-            .container #main #main_title .philosophy { width:21vw; display:flex; flex-direction:column; margin:180px 10% 0 auto; color:#222; }
-                .container #main #main_title .philosophy h3 { margin:40px 0; font-weight:700; }
-                .container #main #main_title .philosophy p { line-height:1.4; font-size:1.4vw; font-weight:400; margin:0; }
-                    .container #main #main_title .philosophy p span { font-weight:500; }
+            #main_title .philosophy { width:21vw; display:flex; flex-direction:column; margin:180px 10% 0 auto; color:#222; }
+                #main_title .philosophy h3 { margin:40px 0; font-weight:700; }
+                #main_title .philosophy p { line-height:1.4; font-size:1.4vw; font-weight:400; margin:0; }
+                    #main_title .philosophy p span { font-weight:500; }
 
         /** value **/
-        .container #main #value { width:100%; color:#222; }
-            .container #main #value h3 { width:80%; margin:0 auto; padding-top:30px; box-sizing:border-box; border-top:1px solid #000; font-weight:700; }
-            .container #main #value h2 { width:80%; margin:140px auto; font-size:6.25vw; line-height:0.9; }
+        #value { width:100%; color:#222; }
+            #value h3 { width:80%; margin:0 auto; padding-top:30px; box-sizing:border-box; border-top:1px solid #000; font-weight:700; }
+            #value h2 { width:80%; margin:140px auto; font-size:6.25vw; line-height:0.9; }
             /* video */
-            .container #main #value .video_box { width:100%; height:570px; overflow:hidden; display:flex; align-items:center; }
-                .container #main #value .video_box video { width:100%; vertical-align:top; }
+            #value .video_box { width:100%; height:570px; overflow:hidden; display:flex; align-items:center; }
+                #value .video_box video { width:100%; vertical-align:top; }
 
         /** history **/
-        .container #main #history { width:100%; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); background-size:500% 500%; animation:gradient 7s ease infinite; box-sizing:border-box; position:relative; min-height:100vh; }
+        #history { width:100%; background:linear-gradient(#ffcc47, #ff4351, #2ea7d7); background-size:500% 500%; animation:gradient 7s ease infinite; box-sizing:border-box; position:relative; min-height:100vh; }
         @keyframes gradient {
             0% { background-position: 50% 50%; }
             50% { background-position: 100% 100%; }
             100% { background-position: 50% 50%; }
         }
-            .container #main #history article { height:100vh; }
+            #history article { height:100vh; }
 
-            .container #main #history .space_holder { position:relative; width:100%; }
-                .container #main #history .space_holder .sticky { position:sticky; top:0; height:100vh; width:100%; overflow-x:hidden; }
-                    .container #main #history .space_holder .sticky .horizontal { position:absolute; height:100%; will-change:transform; }
-                        .container #main #history .space_holder .sticky .horizontal .cards { position:relative; height:100%; display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; }
+            #history .space_holder { position:relative; width:100%; }
+                #history .space_holder .sticky { position:sticky; top:0; height:100vh; width:100%; overflow-x:hidden; }
+                    #history .space_holder .sticky .horizontal { position:absolute; height:100%; will-change:transform; }
+                        #history .space_holder .sticky .horizontal .cards { position:relative; height:100%; display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; }
 
             /* history title */
-            .container #main #history .history_title { width:95vw; margin-right:10%; padding:120px 4%; box-sizing:border-box; background:#fff url(../images/about_next.png) no-repeat 90% 47%; background-size:80px; display:flex; flex-direction:column; justify-content:space-between; transition:0.2s; }
-            .container #main #history .history_title.active { background:#eee url(../images/about_next.png) no-repeat 90% 47%; background-size:80px; }
-                .container #main #history .history_title .txt h2 { font-size:6.25vw; margin:0; transition:0.2s; }
-                .container #main #history .history_title.active .txt h2 { color:#fff; text-shadow:0 0 10px rgba(0, 0, 0, 0.1); }
-                .container #main #history .history_title .txt > p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#565656; font-weight:400; margin:10px 0 0 10px; }
+            #history .history_title { width:95vw; margin-right:10%; padding:120px 4%; box-sizing:border-box; background:#fff url(../images/about_next.png) no-repeat 90% 47%; background-size:80px; display:flex; flex-direction:column; justify-content:space-between; transition:0.2s; }
+            #history .history_title.active { background:#eee url(../images/about_next.png) no-repeat 90% 47%; background-size:80px; }
+                #history .history_title .txt h2 { font-size:6.25vw; margin:0; transition:0.2s; }
+                #history .history_title.active .txt h2 { color:#fff; text-shadow:0 0 10px rgba(0, 0, 0, 0.1); }
+                #history .history_title .txt > p { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; color:#565656; font-weight:400; margin:10px 0 0 10px; }
 
-                .container #main #history .history_title .footprint { margin-left:10px; }
-                    .container #main #history .history_title .footprint h3 { font-weight:700; font-size:1.2em; margin:20px 0; }
-                    .container #main #history .history_title .footprint p { line-height:1.4; font-weight:400; font-size:1.2vw; }
-                        .container #main #history .history_title .footprint p span { font-weight:500; }
+                #history .history_title .footprint { margin-left:10px; }
+                    #history .history_title .footprint h3 { font-weight:700; font-size:1.2em; margin:20px 0; }
+                    #history .history_title .footprint p { line-height:1.4; font-weight:400; font-size:1.2vw; }
+                        #history .history_title .footprint p span { font-weight:500; }
 
             /* history box */
-            .container #main #history .history_box { width:410px; margin-right:30px; padding:100px 1%; box-sizing:border-box; color:#fff; display:flex; flex-direction:column; justify-content:space-between; }
-            .container #main #history .history_box:last-of-type { margin-right:15px; }
-                .container #main #history .history_box h3 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:3.5vw; margin:0; }
+            #history .history_box { width:410px; margin-right:30px; padding:100px 1%; box-sizing:border-box; color:#fff; display:flex; flex-direction:column; justify-content:space-between; }
+            #history .history_box:last-of-type { margin-right:15px; }
+                #history .history_box h3 { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-size:3.5vw; margin:0; }
 
-                .container #main #history .history_box ul li { font-size:1.1em; margin-bottom:50px; }
-                .container #main #history .history_box ul li:last-child { margin-bottom:0; }
-                    .container #main #history .history_box ul li p:first-of-type { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; font-size:1.2em; }
-                        .container #main #history .history_box ul li p span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+                #history .history_box ul li { font-size:1.1em; margin-bottom:50px; }
+                #history .history_box ul li:last-child { margin-bottom:0; }
+                    #history .history_box ul li p:first-of-type { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:800; font-size:1.2em; }
+                        #history .history_box ul li p span { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
-            .container #main #history .box1 { background-color:rgba(255, 204, 71, 0.5); }
-            .container #main #history .box2 { background-color:rgba(255, 67, 81, 0.5); }
-            .container #main #history .box3 { background-color:rgba(46, 167, 215); }
-
+            #history .box1 { background-color:rgba(255, 204, 71, 0.5); }
+            #history .box2 { background-color:rgba(255, 67, 81, 0.5); }
+            #history .box3 { background-color:rgba(46, 167, 215); }
 
     /***** footer *****/
-    .container footer { width:100%; display:flex; align-items:flex-start; padding:90px 100px; box-sizing:border-box; font-weight:300; color:#222; font-size:0.917vw; background-color:#fff; position:relative; z-index:3; }
-    .container footer img { display:block; width:100px; height:61px; }
+    footer { width:100%; display:flex; align-items:flex-start; padding:90px 100px; box-sizing:border-box; font-weight:300; color:#222; font-size:0.917vw; background-color:#fff; position:relative; z-index:3; }
+    footer img { display:block; width:100px; height:61px; }
 
-    .container footer > p { margin:0 170px 0 auto; line-height:1.6; }
+    footer > p { margin:0 170px 0 auto; line-height:1.6; }
 
-    .container footer ul:first-of-type, .container footer ul:nth-of-type(2) { margin-right:170px; }
-        .container footer ul:first-of-type li { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
+    footer ul:first-of-type, footer ul:nth-of-type(2) { margin-right:170px; }
+        footer ul:first-of-type li { font-family:'Raleway', "Helvetica Neue","Apple SD Gothic Neo",sans-serif; }
 
-        .container footer ul:nth-of-type(2) { font-weight:500; }
+        footer ul:nth-of-type(2) { font-weight:500; }
 
-        .container footer ul:last-of-type li:first-child { font-weight:500; cursor:pointer; }
-            .container footer ul li { margin-bottom:10px; }
-                .container footer ul li a { color:#000; }
-
+        footer ul:last-of-type li:first-child { font-weight:500; cursor:pointer; }
+            footer ul li { margin-bottom:10px; }
+                footer ul li a { color:#000; }
 
     /***** license *****/
-    .container #license { width:100%; font-size:0.9em; color:#ddd; text-align:center; padding:0 0 40px 0; background-color:#fff; position:relative; z-index:3; }
+    #license { width:100%; font-size:0.9em; color:#ddd; text-align:center; padding:0 0 40px 0; background-color:#fff; position:relative; z-index:3; }
 
     /***** go to top *****/
-    .container #go_to_top { position:fixed; bottom:20px; right:20px; width:35px; height:35px; background:url(../images/to_top.svg) no-repeat 50% 50%; background-size:28px; z-index:9; cursor:pointer; opacity:0; }
+    #go_to_top { position:fixed; bottom:20px; right:20px; width:35px; height:35px; background:url(../images/to_top.svg) no-repeat 50% 50%; background-size:28px; z-index:9; cursor:pointer; opacity:0; }
